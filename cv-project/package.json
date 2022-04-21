@@ -1,4 +1,5 @@
 {
+  "homepage": "https://MargaretKerubo.github.io/SideHustle-React.js",
   "name": "cv-project",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@types/materialize-css": "^1.0.11"
+    "@types/materialize-css": "^1.0.11",
+    "gh-pages": "^3.2.3"
   }
 }
